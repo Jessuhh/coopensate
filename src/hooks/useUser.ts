@@ -2,7 +2,7 @@ import { useContext } from "react";
 import {
 	UserContext,
 	type UserContextValue,
-} from "../core/Providers/UserProvider";
+} from "../core/Providers/UserContext";
 
 export function useUser(): UserContextValue {
 	const context = useContext(UserContext);

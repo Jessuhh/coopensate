@@ -20,6 +20,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check build
+        run: npm run build
+
       - name: Check lint and TypeScript
         run: npm run lint
 
