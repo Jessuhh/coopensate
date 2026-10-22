@@ -8,7 +8,8 @@
 		"build": "tsc -b && vite build",
 		"lint": "oxlint",
 		"preview": "vite preview",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"format:check": "prettier --check ."
 	},
 	"dependencies": {
 		"@mantine/charts": "^9.7.2",
