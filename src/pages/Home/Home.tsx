@@ -48,7 +48,7 @@ export default function Home() {
 
 	return (
 		<Stack>
-			<Title>Hello {profile?.name}</Title>
+			<Title>Hello {profile?.name}!</Title>
 			<NumberInput
 				value={kilometers}
 				onValueChange={(value) => setKilometers(Number(value.value))}
