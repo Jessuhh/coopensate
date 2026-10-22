@@ -25,3 +25,7 @@ dist-ssr
 
 # supabase
 supabase/.temp/
+
+.vercel
+.env*
+.env
