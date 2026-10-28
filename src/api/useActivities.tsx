@@ -4,7 +4,8 @@ import { supabase } from "../core/supabase";
 
 const query = supabase
 	.from("activities")
-	.select("*, activities_types(*), profiles(*)");
+	.select("*, activities_types(*), profiles(*)")
+	.order("created_at", { ascending: false });
 
 export type Activities = QueryData<typeof query>;
 export type Activity = Activities[number];

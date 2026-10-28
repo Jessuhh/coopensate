@@ -1,0 +1,18 @@
+.wrapper {
+	padding: var(--mantine-spacing-md);
+	height: 100vh;
+}
+
+.leftPanel {
+	max-width: 500px;
+	height: 100%;
+}
+
+.log {
+	flex: 1;
+	min-height: 0;
+}
+
+.rightPanel {
+	max-width: unset;
+}
