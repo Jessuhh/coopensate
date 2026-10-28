@@ -1,5 +1,6 @@
 import { Progress as MantineProgress, Stack, Text } from "@mantine/core";
 import type { Activities } from "../../api/useActivities";
+import { round } from "../../utils/round";
 
 const TRIP_DISTANCE_KM = 6233;
 const VEHICLE_COUNT = 2;
@@ -18,7 +19,7 @@ export default function Progress({ activities }: ProgressProps) {
 	);
 	// % = deel / geheel * 100
 	const percentageSaved = (totalEmission / TOTAL_TRIP_EMISSION) * 100;
-	const saved = Math.round(percentageSaved * 100) / 100;
+	const saved = round(percentageSaved);
 
 	return (
 		<Stack>

@@ -1,10 +1,10 @@
-import { createTheme, MantineProvider } from "@mantine/core";
-import { BrowserRouter } from "react-router";
-import Router from "./Router";
-import { UserProvider } from "./Providers/UserProvider";
+import { MantineProvider } from "@mantine/core";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter } from "react-router";
+import Router from "../Router";
+import { UserProvider } from "./UserProvider";
+import { theme } from "./theme";
 
-const theme = createTheme({/** Put your mantine theme override here */});
 const queryClient = new QueryClient();
 
 export default function Providers() {
